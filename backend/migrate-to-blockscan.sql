@@ -1,0 +1,9 @@
+CREATE DATABASE blockscan;
+
+GRANT ALL PRIVILEGES ON DATABASE blockscan TO dbuser;
+GRANT ALL PRIVILEGES ON DATABASE blockscan TO postgres;
+
+
+
+
+
