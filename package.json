@@ -1,0 +1,17 @@
+{
+  "name": "nexus-blockchain-core",
+  "version": "1.0.0",
+  "description": "Nexus Blockchain Core - Full Stack Application",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n backend,frontend -c blue,green \"npm run dev --prefix backend\" \"npm run dev --prefix Frontend\"",
+    "start": "concurrently -n backend,frontend -c blue,green \"npm start --prefix backend\" \"npm run dev --prefix Frontend\"",
+    "install:all": "npm install && npm install --prefix backend && npm install --prefix Frontend",
+    "build": "npm run build --prefix Frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "author": "EbadAhmed1",
+  "license": "ISC"
+}
